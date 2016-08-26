@@ -28,6 +28,7 @@
     .discussion-timeline.wide {
       width: 920px;
     }
+    .container { width: 1280px; }
   </style>
 {%- endblock -%}
 
@@ -108,12 +109,6 @@
         <div class="container new-discussion-timeline experiment-repo-nav">
           <div class="repository-content">
             <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
-              {% if not user_content and title %}
-                <h3>
-                  <span class="octicon octicon-book"></span>
-                  {{ title }}
-                </h3>
-              {% endif %}
               <article class="markdown-body entry-content" itemprop="text" id="grip-content">
                 {{ content|safe }}
               </article>
